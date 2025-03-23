@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Vento Wing/Kite Napoli - Raimondo</title>
+  <link rel="icon" href="https://github.com/ristorna/vento/blob/53bd1c8453277b9bcf5dcd388e2790a146e48402/weather_app_icon_.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="https://github.com/ristorna/vento/blob/53bd1c8453277b9bcf5dcd388e2790a146e48402/weather_app_icon_.png">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f1f5f9;
+      padding: 1rem;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+    .iframe-wrapper {
+      margin-top: 0.8rem;
+    }
+    .iframe-wrapper iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .source {
+      font-size: 0.85rem;
+      color: gray;
+      margin-bottom: 0.4rem;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Check Vento Wing/Kite Napoli - Raimondo</h1>
+  <div class="grid">
+
+    <div class="card">
+      <h2>Lido Gallo</h2>
+      <div class="source">Fonte: vedetta.org</div>
+      <div class="iframe-wrapper">
+        <iframe src="https://vedetta.org/webcam/italia/campania/caserta/castel-volturno/"></iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Miseno</h2>
+      <div class="source">Fonte: vedetta.org</div>
+      <div class="iframe-wrapper">
+        <iframe src="https://vedetta.org/webcam/italia/campania/napoli/bacoli/"></iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Lido Don Pablo (Varcaturo)</h2>
+      <div class="source">Fonte: kitesurfnapoli.it</div>
+      <div class="iframe-wrapper">
+        <iframe src="https://www.kitesurfnapoli.it/meteo"></iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Vindicio</h2>
+      <div class="source">Fonte: vindicio.it</div>
+      <div class="iframe-wrapper">
+        <iframe src="https://www.vindicio.it/maremoto/webcam-sestazione-meteo/"></iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Scauri</h2>
+      <div class="source">Fonte: meteobridge.com</div>
+      <div class="iframe-wrapper">
+        <iframe src="https://admin.meteobridge.com/aa9137fb953a8cdcb8e118fbb3877d5d/PWS2/index.php"></iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Castellammare di Stabia</h2>
+      <div class="source">Fonte: meteoproject.it</div>
+      <p class="note">Per visualizzare i dati meteo aggiornati della stazione, clicca il link qui sotto:</p>
+      <p style="text-align: center; margin-top: 0.6rem;">
+        <a href="https://www.meteoproject.it/ftp/stazioni/castellammare3/index.php" target="_blank" style="display: inline-block; padding: 0.7rem 1rem; background-color: #2563eb; color: white; border-radius: 8px; text-decoration: none; font-weight: bold;">
+          👉 Apri la stazione Castellammare di Stabia
+        </a>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
